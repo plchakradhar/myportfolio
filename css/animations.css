@@ -1,0 +1,154 @@
+/* Typing Animation */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: var(--primary) }
+}
+
+.typing-animation {
+    overflow: hidden;
+    border-right: 3px solid var(--primary);
+    white-space: nowrap;
+    animation: 
+        typing 2s steps(30, end),
+        blink-caret 0.75s step-end infinite;
+}
+
+/* Pulse Effect */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.pulse-effect:hover {
+    animation: pulse 1.5s infinite;
+}
+
+/* Floating Animation */
+@keyframes floating {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
+
+.floating-element {
+    animation: floating 3s ease-in-out infinite;
+}
+
+/* Gradient Background Animation */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.gradient-bg {
+    background: linear-gradient(-45deg, #6c63ff, #4d44db, #00b4d8, #0096c7);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+.fade-in.delay-1 { animation-delay: 0.2s; }
+.fade-in.delay-2 { animation-delay: 0.4s; }
+.fade-in.delay-3 { animation-delay: 0.6s; }
+
+/* Card Hover Effect */
+.link-card:hover {
+    transform: translateY(-10px) !important;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Rotate Animation */
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.rotate {
+    animation: rotate 10s linear infinite;
+}
+
+/* Photo Animation */
+.profile-photo-container {
+    transform: perspective(1000px);
+    transition: var(--transition);
+}
+
+.profile-photo {
+    transition: transform 0.5s ease;
+}
+
+.profile-photo:hover {
+    transform: scale(1.05);
+}
+
+.photo-border-animation {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border: 3px dashed rgba(255,255,255,0.7);
+    border-radius: 50%;
+    animation: rotate 20s linear infinite;
+    z-index: -1;
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Timeline Animation */
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -7px;
+    top: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #6c63ff;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(108, 99, 255, 0.7); }
+    70% { box-shadow: 0 0 0 10px rgba(108, 99, 255, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(108, 99, 255, 0); }
+}
+
+/* Section Entry Animation */
+.section-title {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Staggered Timeline Items */
+.timeline-item:nth-child(1) { animation-delay: 0.2s; }
+.timeline-item:nth-child(2) { animation-delay: 0.4s; }
+.timeline-item:nth-child(3) { animation-delay: 0.6s; }

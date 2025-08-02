@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Skills | BTech CSE Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body class="skills-page">
+    <div id="particles-js"></div>
+    
+    <!-- Floating Navigation -->
+    <nav class="floating-nav">
+        <div class="nav-content">
+            <div class="nav-logo">
+                <span>JD</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html"><i class="fas fa-home"></i><span>Home</span></a>
+                <a href="about.html"><i class="fas fa-user"></i><span>About</span></a>
+                <a href="skills.html" class="active"><i class="fas fa-code"></i><span>Skills</span></a>
+                <a href="projects.html"><i class="fas fa-project-diagram"></i><span>Projects</span></a>
+                <a href="education.html"><i class="fas fa-graduation-cap"></i><span>Education</span></a>
+                <a href="achievements.html"><i class="fas fa-trophy"></i><span>Achievements</span></a>
+                <a href="contact.html"><i class="fas fa-envelope"></i><span>Contact</span></a>
+            </div>
+            <div class="nav-footer">
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+                <p>&copy; 2023 Your Name</p>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="skills-section">
+            <div class="section-header">
+                <h1 class="text-gradient">Technical <span>Skills</span></h1>
+                <p>My competencies and expertise areas</p>
+            </div>
+
+            <div class="skills-container">
+                <div class="skills-categories">
+                    <div class="category-card active" data-category="programming">
+                        <i class="fas fa-code"></i>
+                        <h3>Programming</h3>
+                    </div>
+                    <div class="category-card" data-category="web">
+                        <i class="fas fa-globe"></i>
+                        <h3>Web Development</h3>
+                    </div>
+                    <div class="category-card" data-category="database">
+                        <i class="fas fa-database"></i>
+                        <h3>Databases</h3>
+                    </div>
+                    <div class="category-card" data-category="tools">
+                        <i class="fas fa-tools"></i>
+                        <h3>Tools & Platforms</h3>
+                    </div>
+                </div>
+
+                <div class="skills-content">
+                    <!-- Programming Skills -->
+                    <div class="skills-category active" id="programming">
+                        <div class="skill-card fade-in">
+                            <div class="skill-header">
+                                <i class="fab fa-python"></i>
+                                <h3>Python</h3>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <p>Experience with Django, Flask, NumPy, Pandas, and ML libraries</p>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-card fade-in delay-1">
+                            <div class="skill-header">
+                                <i class="fab fa-java"></i>
+                                <h3>Java</h3>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <p>Object-oriented programming, JavaFX, Swing, and Android basics</p>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 80%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-card fade-in delay-2">
+                            <div class="skill-header">
+                                <i class="fas fa-c"></i>
+                                <h3>C/C++</h3>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <p>Data structures, algorithms, and system programming</p>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Web Development Skills -->
+                    <div class="skills-category" id="web">
+                        <div class="skill-card">
+                            <div class="skill-header">
+                                <i class="fab fa-html5"></i>
+                                <h3>HTML5</h3>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <p>Semantic HTML, accessibility standards, and modern practices</p>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 90%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-card">
+                            <div class="skill-header">
+                                <i class="fab fa-css3-alt"></i>
+                                <h3>CSS3</h3>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <p>Flexbox, Grid, animations, and responsive design</p>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-card">
+                            <div class="skill-header">
+                                <i class="fab fa-js"></i>
+                                <h3>JavaScript</h3>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <p>ES6+, DOM manipulation, and basic React knowledge</p>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Database Skills -->
+                    <div class="skills-category" id="database">
+                        <div class="skill-card">
+                            <div class="skill-header">
+                                <i class="fas fa-database"></i>
+                                <h3>MySQL</h3>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <p>Database design, queries, joins, and basic administration</p>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 70%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-card">
+                            <div class="skill-header">
+                                <i class="fas fa-fire"></i>
+                                <h3>Firebase</h3>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <p>Firestore, Authentication, and Cloud Functions</p>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 65%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-card">
+                            <div class="skill-header">
+                                <i class="fas fa-server"></i>
+                                <h3>MongoDB</h3>
+                                <span class="skill-level">Beginner</span>
+                            </div>
+                            <p>Basic CRUD operations and schema design</p>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 60%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tools & Platforms -->
+                    <div class="skills-category" id="tools">
+                        <div class="skill-card">
+                            <div class="skill-header">
+                                <i class="fab fa-git-alt"></i>
+                                <h3>Git</h3>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <p>Version control, branching, and collaboration workflows</p>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 75%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-card">
+                            <div class="skill-header">
+                                <i class="fab fa-aws"></i>
+                                <h3>AWS</h3>
+                                <span class="skill-level">Beginner</span>
+                            </div>
+                            <p>EC2, S3, Lambda, and basic cloud concepts</p>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 55%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-card">
+                            <div class="skill-header">
+                                <i class="fas fa-terminal"></i>
+                                <h3>Linux</h3>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <p>Bash scripting, system administration, and server management</p>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // Skills category switching
+        document.querySelectorAll('.category-card').forEach(card => {
+            card.addEventListener('click', function() {
+                // Remove active class from all cards and categories
+                document.querySelectorAll('.category-card').forEach(c => c.classList.remove('active'));
+                document.querySelectorAll('.skills-category').forEach(c => c.classList.remove('active'));
+                
+                // Add active class to clicked card
+                this.classList.add('active');
+                
+                // Show corresponding category
+                const categoryId = this.getAttribute('data-category');
+                document.getElementById(categoryId).classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
