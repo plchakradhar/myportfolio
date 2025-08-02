@@ -24,7 +24,7 @@ body {
     color: var(--text);
     line-height: 1.6;
     overflow-x: hidden;
-    background-color: yellow;
+    background-color: green;
 }
 
 /* Particles.js Background */
