@@ -1,251 +1,474 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Technical Skills | BTech CSE Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/animations.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>P. Lakshmi Chakradhar | External Skills</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/skills.css" />
+  <link rel="stylesheet" href="css/animations.css" />
 </head>
 <body class="skills-page">
-    <div id="particles-js"></div>
-    
-    <!-- Floating Navigation -->
-    <nav class="floating-nav">
-        <div class="nav-content">
-            <div class="nav-logo">
-                <span>JD</span>
-            </div>
-            <div class="nav-links">
-                <a href="index.html"><i class="fas fa-home"></i><span>Home</span></a>
-                <a href="about.html"><i class="fas fa-user"></i><span>About</span></a>
-                <a href="skills.html" class="active"><i class="fas fa-code"></i><span>Skills</span></a>
-                <a href="projects.html"><i class="fas fa-project-diagram"></i><span>Projects</span></a>
-                <a href="education.html"><i class="fas fa-graduation-cap"></i><span>Education</span></a>
-                <a href="achievements.html"><i class="fas fa-trophy"></i><span>Achievements</span></a>
-                <a href="contact.html"><i class="fas fa-envelope"></i><span>Contact</span></a>
-            </div>
-            <div class="nav-footer">
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-github"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                </div>
-                <p>&copy; 2023 Your Name</p>
-            </div>
+  <!-- Particle Background -->
+  <div id="particles-js" class="particles-container"></div>
+
+  <!-- Floating Navigation -->
+  <nav class="floating-nav">
+    <div class="nav-content">
+      <div class="nav-links">
+        <a href="index.html"><i class="fas fa-home"></i><span>Home</span></a>
+        <a href="about.html"><i class="fas fa-user"></i><span>About</span></a>
+        <a href="projects.html"><i class="fas fa-project-diagram"></i><span>Projects</span></a>
+        <a href="achievements.html"><i class="fas fa-trophy"></i><span>Achievements</span></a>
+        <a href="skills.html" class="active"><i class="fas fa-code"></i><span>External Skills</span></a>
+        <a href="education.html"><i class="fas fa-graduation-cap"></i><span>Education</span></a>
+        <a href="contact.html"><i class="fas fa-envelope"></i><span>Contact</span></a>
+      </div>
+      <div class="nav-footer">
+        <div class="social-links">
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
         </div>
-    </nav>
+        <p>&copy; 2023 P. Lakshmi Chakradhar</p>
+      </div>
+    </div>
+  </nav>
 
-    <!-- Main Content -->
+  <!-- Main Content -->
+  <div class="content-overlay">
     <main class="main-content">
-        <section class="skills-section">
-            <div class="section-header">
-                <h1 class="text-gradient">Technical <span>Skills</span></h1>
-                <p>My competencies and expertise areas</p>
+      <section class="skills-section">
+        <div class="section-header">
+          <h1 class="text-gradient">My <span>External Skills</span></h1>
+          <p class="subtitle">Beyond technical expertise - additional capabilities that enhance my professional value</p>
+        </div>
+
+        <!-- Skills Filter -->
+        <div class="skills-filter">
+          <button class="filter-btn active" onclick="filterSkills('all')">All Skills</button>
+          <button class="filter-btn" onclick="filterSkills('creative')">Creative</button>
+          <button class="filter-btn" onclick="filterSkills('management')">Management</button>
+          <button class="filter-btn" onclick="filterSkills('communication')">Communication</button>
+          <button class="filter-btn" onclick="filterSkills('other')">Other Skills</button>
+        </div>
+
+        <!-- Creative Skills -->
+        <div class="skills-category creative">
+          <h2 class="section-title"><i class="fas fa-paint-brush"></i> Creative Skills</h2>
+          
+          <div class="skills-grid">
+            <!-- Video Editing -->
+            <div class="skill-card" data-tilt>
+              <div class="skill-icon">
+                <i class="fas fa-video"></i>
+              </div>
+              <div class="skill-content">
+                <h3>Video Editing</h3>
+                <div class="skill-level">
+                  <div class="level-bar">
+                    <div class="level-fill" style="width: 90%"></div>
+                  </div>
+                  <span>Advanced</span>
+                </div>
+                <p class="skill-description">Professional video editing with expertise in Adobe Premiere Pro, Final Cut Pro, and DaVinci Resolve. Specialized in color grading, motion graphics, and storytelling through video.</p>
+                <div class="skill-tools">
+                  <span>Premiere Pro</span>
+                  <span>After Effects</span>
+                  <span>Final Cut Pro</span>
+                  <span>DaVinci Resolve</span>
+                </div>
+              </div>
             </div>
 
-            <div class="skills-container">
-                <div class="skills-categories">
-                    <div class="category-card active" data-category="programming">
-                        <i class="fas fa-code"></i>
-                        <h3>Programming</h3>
-                    </div>
-                    <div class="category-card" data-category="web">
-                        <i class="fas fa-globe"></i>
-                        <h3>Web Development</h3>
-                    </div>
-                    <div class="category-card" data-category="database">
-                        <i class="fas fa-database"></i>
-                        <h3>Databases</h3>
-                    </div>
-                    <div class="category-card" data-category="tools">
-                        <i class="fas fa-tools"></i>
-                        <h3>Tools & Platforms</h3>
-                    </div>
+            <!-- Photo Editing -->
+            <div class="skill-card" data-tilt>
+              <div class="skill-icon">
+                <i class="fas fa-camera-retro"></i>
+              </div>
+              <div class="skill-content">
+                <h3>Photo Editing</h3>
+                <div class="skill-level">
+                  <div class="level-bar">
+                    <div class="level-fill" style="width: 85%"></div>
+                  </div>
+                  <span>Advanced</span>
                 </div>
-
-                <div class="skills-content">
-                    <!-- Programming Skills -->
-                    <div class="skills-category active" id="programming">
-                        <div class="skill-card fade-in">
-                            <div class="skill-header">
-                                <i class="fab fa-python"></i>
-                                <h3>Python</h3>
-                                <span class="skill-level">Advanced</span>
-                            </div>
-                            <p>Experience with Django, Flask, NumPy, Pandas, and ML libraries</p>
-                            <div class="skill-progress">
-                                <div class="progress-bar" style="width: 85%"></div>
-                            </div>
-                        </div>
-
-                        <div class="skill-card fade-in delay-1">
-                            <div class="skill-header">
-                                <i class="fab fa-java"></i>
-                                <h3>Java</h3>
-                                <span class="skill-level">Advanced</span>
-                            </div>
-                            <p>Object-oriented programming, JavaFX, Swing, and Android basics</p>
-                            <div class="skill-progress">
-                                <div class="progress-bar" style="width: 80%"></div>
-                            </div>
-                        </div>
-
-                        <div class="skill-card fade-in delay-2">
-                            <div class="skill-header">
-                                <i class="fas fa-c"></i>
-                                <h3>C/C++</h3>
-                                <span class="skill-level">Intermediate</span>
-                            </div>
-                            <p>Data structures, algorithms, and system programming</p>
-                            <div class="skill-progress">
-                                <div class="progress-bar" style="width: 75%"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Web Development Skills -->
-                    <div class="skills-category" id="web">
-                        <div class="skill-card">
-                            <div class="skill-header">
-                                <i class="fab fa-html5"></i>
-                                <h3>HTML5</h3>
-                                <span class="skill-level">Advanced</span>
-                            </div>
-                            <p>Semantic HTML, accessibility standards, and modern practices</p>
-                            <div class="skill-progress">
-                                <div class="progress-bar" style="width: 90%"></div>
-                            </div>
-                        </div>
-
-                        <div class="skill-card">
-                            <div class="skill-header">
-                                <i class="fab fa-css3-alt"></i>
-                                <h3>CSS3</h3>
-                                <span class="skill-level">Advanced</span>
-                            </div>
-                            <p>Flexbox, Grid, animations, and responsive design</p>
-                            <div class="skill-progress">
-                                <div class="progress-bar" style="width: 85%"></div>
-                            </div>
-                        </div>
-
-                        <div class="skill-card">
-                            <div class="skill-header">
-                                <i class="fab fa-js"></i>
-                                <h3>JavaScript</h3>
-                                <span class="skill-level">Intermediate</span>
-                            </div>
-                            <p>ES6+, DOM manipulation, and basic React knowledge</p>
-                            <div class="skill-progress">
-                                <div class="progress-bar" style="width: 75%"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Database Skills -->
-                    <div class="skills-category" id="database">
-                        <div class="skill-card">
-                            <div class="skill-header">
-                                <i class="fas fa-database"></i>
-                                <h3>MySQL</h3>
-                                <span class="skill-level">Intermediate</span>
-                            </div>
-                            <p>Database design, queries, joins, and basic administration</p>
-                            <div class="skill-progress">
-                                <div class="progress-bar" style="width: 70%"></div>
-                            </div>
-                        </div>
-
-                        <div class="skill-card">
-                            <div class="skill-header">
-                                <i class="fas fa-fire"></i>
-                                <h3>Firebase</h3>
-                                <span class="skill-level">Intermediate</span>
-                            </div>
-                            <p>Firestore, Authentication, and Cloud Functions</p>
-                            <div class="skill-progress">
-                                <div class="progress-bar" style="width: 65%"></div>
-                            </div>
-                        </div>
-
-                        <div class="skill-card">
-                            <div class="skill-header">
-                                <i class="fas fa-server"></i>
-                                <h3>MongoDB</h3>
-                                <span class="skill-level">Beginner</span>
-                            </div>
-                            <p>Basic CRUD operations and schema design</p>
-                            <div class="skill-progress">
-                                <div class="progress-bar" style="width: 60%"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Tools & Platforms -->
-                    <div class="skills-category" id="tools">
-                        <div class="skill-card">
-                            <div class="skill-header">
-                                <i class="fab fa-git-alt"></i>
-                                <h3>Git</h3>
-                                <span class="skill-level">Intermediate</span>
-                            </div>
-                            <p>Version control, branching, and collaboration workflows</p>
-                            <div class="skill-progress">
-                                <div class="progress-bar" style="width: 75%"></div>
-                            </div>
-                        </div>
-
-                        <div class="skill-card">
-                            <div class="skill-header">
-                                <i class="fab fa-aws"></i>
-                                <h3>AWS</h3>
-                                <span class="skill-level">Beginner</span>
-                            </div>
-                            <p>EC2, S3, Lambda, and basic cloud concepts</p>
-                            <div class="skill-progress">
-                                <div class="progress-bar" style="width: 55%"></div>
-                            </div>
-                        </div>
-
-                        <div class="skill-card">
-                            <div class="skill-header">
-                                <i class="fas fa-terminal"></i>
-                                <h3>Linux</h3>
-                                <span class="skill-level">Intermediate</span>
-                            </div>
-                            <p>Bash scripting, system administration, and server management</p>
-                            <div class="skill-progress">
-                                <div class="progress-bar" style="width: 70%"></div>
-                            </div>
-                        </div>
-                    </div>
+                <p class="skill-description">Expert in photo manipulation, retouching, and enhancement using Adobe Photoshop and Lightroom. Skilled in creating visually stunning compositions and brand-consistent imagery.</p>
+                <div class="skill-tools">
+                  <span>Photoshop</span>
+                  <span>Lightroom</span>
+                  <span>GIMP</span>
+                  <span>Canva</span>
                 </div>
+              </div>
             </div>
-        </section>
+
+            <!-- Graphic Design -->
+            <div class="skill-card" data-tilt>
+              <div class="skill-icon">
+                <i class="fas fa-pencil-ruler"></i>
+              </div>
+              <div class="skill-content">
+                <h3>Graphic Design</h3>
+                <div class="skill-level">
+                  <div class="level-bar">
+                    <div class="level-fill" style="width: 80%"></div>
+                  </div>
+                  <span>Proficient</span>
+                </div>
+                <p class="skill-description">Creating visually appealing designs for digital and print media. Strong understanding of typography, color theory, and layout principles for effective visual communication.</p>
+                <div class="skill-tools">
+                  <span>Illustrator</span>
+                  <span>InDesign</span>
+                  <span>Figma</span>
+                  <span>Canva</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Management Skills -->
+        <div class="skills-category management">
+          <h2 class="section-title"><i class="fas fa-tasks"></i> Management Skills</h2>
+          
+          <div class="skills-grid">
+            <!-- Project Management -->
+            <div class="skill-card" data-tilt>
+              <div class="skill-icon">
+                <i class="fas fa-project-diagram"></i>
+              </div>
+              <div class="skill-content">
+                <h3>Project Management</h3>
+                <div class="skill-level">
+                  <div class="level-bar">
+                    <div class="level-fill" style="width: 85%"></div>
+                  </div>
+                  <span>Advanced</span>
+                </div>
+                <p class="skill-description">Leading projects from conception to completion with Agile and Waterfall methodologies. Experienced in resource allocation, timeline management, and stakeholder communication.</p>
+                <div class="skill-tools">
+                  <span>Trello</span>
+                  <span>Asana</span>
+                  <span>Jira</span>
+                  <span>Microsoft Project</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Team Leadership -->
+            <div class="skill-card" data-tilt>
+              <div class="skill-icon">
+                <i class="fas fa-users"></i>
+              </div>
+              <div class="skill-content">
+                <h3>Team Leadership</h3>
+                <div class="skill-level">
+                  <div class="level-bar">
+                    <div class="level-fill" style="width: 80%"></div>
+                  </div>
+                  <span>Proficient</span>
+                </div>
+                <p class="skill-description">Leading cross-functional teams with empathy and clarity. Skilled in conflict resolution, motivation strategies, and creating collaborative work environments.</p>
+                <div class="skill-tools">
+                  <span>Team Building</span>
+                  <span>Mentoring</span>
+                  <span>Performance Reviews</span>
+                  <span>Conflict Resolution</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Time Management -->
+            <div class="skill-card" data-tilt>
+              <div class="skill-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div class="skill-content">
+                <h3>Time Management</h3>
+                <div class="skill-level">
+                  <div class="level-bar">
+                    <div class="level-fill" style="width: 90%"></div>
+                  </div>
+                  <span>Expert</span>
+                </div>
+                <p class="skill-description">Efficiently managing multiple priorities and deadlines. Expert in productivity techniques like Pomodoro, Eisenhower Matrix, and time blocking for optimal performance.</p>
+                <div class="skill-tools">
+                  <span>Pomodoro</span>
+                  <span>Time Blocking</span>
+                  <span>Prioritization</span>
+                  <span>Calendar Management</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Communication Skills -->
+        <div class="skills-category communication">
+          <h2 class="section-title"><i class="fas fa-comments"></i> Communication Skills</h2>
+          
+          <div class="skills-grid">
+            <!-- Fast Communication -->
+            <div class="skill-card" data-tilt>
+              <div class="skill-icon">
+                <i class="fas fa-bolt"></i>
+              </div>
+              <div class="skill-content">
+                <h3>Fast Communication</h3>
+                <div class="skill-level">
+                  <div class="level-bar">
+                    <div class="level-fill" style="width: 95%"></div>
+                  </div>
+                  <span>Expert</span>
+                </div>
+                <p class="skill-description">Rapid yet precise communication in both written and verbal forms. Ability to distill complex information into clear, actionable messages for diverse audiences.</p>
+                <div class="skill-tools">
+                  <span>Email</span>
+                  <span>Slack</span>
+                  <span>Presentations</span>
+                  <span>Public Speaking</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Technical Writing -->
+            <div class="skill-card" data-tilt>
+              <div class="skill-icon">
+                <i class="fas fa-keyboard"></i>
+              </div>
+              <div class="skill-content">
+                <h3>Technical Writing</h3>
+                <div class="skill-level">
+                  <div class="level-bar">
+                    <div class="level-fill" style="width: 85%"></div>
+                  </div>
+                  <span>Advanced</span>
+                </div>
+                <p class="skill-description">Creating clear, concise technical documentation, user manuals, and API references. Experienced in making complex technical concepts accessible to non-technical audiences.</p>
+                <div class="skill-tools">
+                  <span>Markdown</span>
+                  <span>Confluence</span>
+                  <span>GitHub Wiki</span>
+                  <span>ReadTheDocs</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Public Speaking -->
+            <div class="skill-card" data-tilt>
+              <div class="skill-icon">
+                <i class="fas fa-microphone"></i>
+              </div>
+              <div class="skill-content">
+                <h3>Public Speaking</h3>
+                <div class="skill-level">
+                  <div class="level-bar">
+                    <div class="level-fill" style="width: 80%"></div>
+                  </div>
+                  <span>Proficient</span>
+                </div>
+                <p class="skill-description">Engaging public speaker with experience in tech talks, conference presentations, and workshop facilitation. Skilled at adapting tone and content for different audiences.</p>
+                <div class="skill-tools">
+                  <span>Presentation Design</span>
+                  <span>Storytelling</span>
+                  <span>Audience Engagement</span>
+                  <span>Q&A Handling</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Other Skills -->
+        <div class="skills-category other">
+          <h2 class="section-title"><i class="fas fa-star"></i> Other Valuable Skills</h2>
+          
+          <div class="skills-grid">
+            <!-- Problem Solving -->
+            <div class="skill-card" data-tilt>
+              <div class="skill-icon">
+                <i class="fas fa-lightbulb"></i>
+              </div>
+              <div class="skill-content">
+                <h3>Problem Solving</h3>
+                <div class="skill-level">
+                  <div class="level-bar">
+                    <div class="level-fill" style="width: 90%"></div>
+                  </div>
+                  <span>Expert</span>
+                </div>
+                <p class="skill-description">Analytical thinker with strong problem-solving abilities. Skilled at breaking down complex problems, identifying root causes, and developing effective solutions.</p>
+                <div class="skill-tools">
+                  <span>Critical Thinking</span>
+                  <span>Root Cause Analysis</span>
+                  <span>Decision Making</span>
+                  <span>Creative Solutions</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Adaptability -->
+            <div class="skill-card" data-tilt>
+              <div class="skill-icon">
+                <i class="fas fa-random"></i>
+              </div>
+              <div class="skill-content">
+                <h3>Adaptability</h3>
+                <div class="skill-level">
+                  <div class="level-bar">
+                    <div class="level-fill" style="width: 85%"></div>
+                  </div>
+                  <span>Advanced</span>
+                </div>
+                <p class="skill-description">Quickly adapting to new technologies, environments, and challenges. Comfortable with ambiguity and able to pivot strategies when circumstances change.</p>
+                <div class="skill-tools">
+                  <span>Learning Agility</span>
+                  <span>Flexibility</span>
+                  <span>Resilience</span>
+                  <span>Growth Mindset</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Multitasking -->
+            <div class="skill-card" data-tilt>
+              <div class="skill-icon">
+                <i class="fas fa-layer-group"></i>
+              </div>
+              <div class="skill-content">
+                <h3>Multitasking</h3>
+                <div class="skill-level">
+                  <div class="level-bar">
+                    <div class="level-fill" style="width: 80%"></div>
+                  </div>
+                  <span>Proficient</span>
+                </div>
+                <p class="skill-description">Effectively managing multiple tasks and priorities without compromising quality. Skilled at context switching and maintaining focus amid distractions.</p>
+                <div class="skill-tools">
+                  <span>Task Prioritization</span>
+                  <span>Focus Management</span>
+                  <span>Workflow Optimization</span>
+                  <span>Attention Control</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skills Showcase -->
+        <div class="skills-showcase">
+          <h2 class="section-title"><i class="fas fa-medal"></i> Skill Highlights</h2>
+          
+          <div class="showcase-card" data-tilt>
+            <div class="showcase-content">
+              <h3>My Unique Skill Combination</h3>
+              <p class="showcase-description">What sets me apart is the powerful combination of technical expertise with these external skills, allowing me to:</p>
+              
+              <div class="showcase-features">
+                <div class="feature-item">
+                  <i class="fas fa-check-circle"></i>
+                  <span>Communicate complex technical concepts clearly to non-technical stakeholders</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-check-circle"></i>
+                  <span>Manage projects efficiently while maintaining creative vision</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-check-circle"></i>
+                  <span>Adapt quickly to new tools and technologies in fast-paced environments</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-check-circle"></i>
+                  <span>Create compelling visual content that enhances technical documentation</span>
+                </div>
+              </div>
+              
+              <div class="skill-combination">
+                <div class="combination-item">
+                  <div class="combination-icon">
+                    <i class="fas fa-code"></i>
+                  </div>
+                  <span>Technical Skills</span>
+                </div>
+                <div class="combination-plus">
+                  <i class="fas fa-plus"></i>
+                </div>
+                <div class="combination-item">
+                  <div class="combination-icon">
+                    <i class="fas fa-paint-brush"></i>
+                  </div>
+                  <span>Creative Skills</span>
+                </div>
+                <div class="combination-plus">
+                  <i class="fas fa-plus"></i>
+                </div>
+                <div class="combination-item">
+                  <div class="combination-icon">
+                    <i class="fas fa-comments"></i>
+                  </div>
+                  <span>Communication</span>
+                </div>
+                <div class="combination-equals">
+                  <i class="fas fa-equals"></i>
+                </div>
+                <div class="combination-result">
+                  <span>Exceptional Results</span>
+                </div>
+              </div>
+            </div>
+            <div class="showcase-image">
+              <img src="assets/skills-showcase.jpg" alt="Skill Combination">
+              <div class="skill-badge">
+                <i class="fas fa-certificate"></i>
+                <span>Unique Value Proposition</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+  </div>
 
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="js/particles.js"></script>
-    <script src="js/main.js"></script>
-    <script>
-        // Skills category switching
-        document.querySelectorAll('.category-card').forEach(card => {
-            card.addEventListener('click', function() {
-                // Remove active class from all cards and categories
-                document.querySelectorAll('.category-card').forEach(c => c.classList.remove('active'));
-                document.querySelectorAll('.skills-category').forEach(c => c.classList.remove('active'));
-                
-                // Add active class to clicked card
-                this.classList.add('active');
-                
-                // Show corresponding category
-                const categoryId = this.getAttribute('data-category');
-                document.getElementById(categoryId).classList.add('active');
-            });
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+  <script src="js/particles.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    // Skills filter functionality
+    function filterSkills(category) {
+      // Update active button
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      filterButtons.forEach(btn => btn.classList.remove('active'));
+      event.target.classList.add('active');
+      
+      // Show/hide skill categories
+      const skillCategories = document.querySelectorAll('.skills-category');
+      
+      if (category === 'all') {
+        // Show all categories
+        skillCategories.forEach(cat => {
+          cat.style.display = 'block';
         });
-    </script>
+      } else {
+        // Hide all categories first
+        skillCategories.forEach(cat => {
+          cat.style.display = 'none';
+        });
+        
+        // Show only the selected category
+        document.querySelector(`.${category}`).style.display = 'block';
+      }
+      
+      // Smooth scroll to top of skills
+      document.querySelector('.skills-section').scrollIntoView({
+        behavior: 'smooth'
+      });
+    }
+  </script>
 </body>
 </html>

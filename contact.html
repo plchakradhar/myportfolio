@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>P. Lakshmi Chakradhar | Contact</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+<body class="contact-page">
+  <!-- Particle Background -->
+  <div id="particles-js" class="particles-container"></div>
+
+  <!-- Floating Navigation -->
+  <nav class="floating-nav">
+    <div class="nav-content">
+      <div class="nav-links">
+        <a href="index.html"><i class="fas fa-home"></i><span>Home</span></a>
+        <a href="about.html"><i class="fas fa-user"></i><span>About</span></a>
+        <a href="projects.html"><i class="fas fa-project-diagram"></i><span>Projects</span></a>
+        <a href="achievements.html"><i class="fas fa-trophy"></i><span>Achievements</span></a>
+        <a href="skills.html"><i class="fas fa-code"></i><span>External Skills</span></a>
+        <a href="education.html"><i class="fas fa-graduation-cap"></i><span>Education</span></a>
+        <a href="contact.html" class="active"><i class="fas fa-envelope"></i><span>Contact</span></a>
+      </div>
+      <div class="nav-footer">
+        <div class="social-links">
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>&copy; 2023 P. Lakshmi Chakradhar</p>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="content-overlay">
+    <main class="main-content">
+      <section class="contact-section">
+        <div class="section-header">
+          <h1 class="text-gradient">Get In <span>Touch</span></h1>
+          <p class="subtitle">I'm available for collaborations, opportunities, or just a friendly chat</p>
+        </div>
+
+        <div class="contact-container">
+          <!-- Contact Information -->
+          <div class="contact-info">
+            <div class="info-card" data-tilt>
+              <div class="info-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="info-content">
+                <h3>Email Me</h3>
+                <p>For general inquiries and collaborations</p>
+                <a href="mailto:chakradhar@example.com" class="info-link">chakradhar@example.com</a>
+              </div>
+            </div>
+
+            <div class="info-card" data-tilt>
+              <div class="info-icon">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <div class="info-content">
+                <h3>Call Me</h3>
+                <p>Available for urgent matters during business hours</p>
+                <a href="tel:+919876543210" class="info-link">+91 98765 43210</a>
+              </div>
+            </div>
+
+            <div class="info-card" data-tilt>
+              <div class="info-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="info-content">
+                <h3>Location</h3>
+                <p>Based in Hyderabad, open to remote work</p>
+                <a href="https://maps.google.com" target="_blank" class="info-link">View on Map</a>
+              </div>
+            </div>
+
+            <div class="availability">
+              <h3><i class="fas fa-clock"></i> Availability</h3>
+              <div class="availability-days">
+                <div class="day">
+                  <span>Mon-Fri</span>
+                  <span>9:00 AM - 6:00 PM</span>
+                </div>
+                <div class="day">
+                  <span>Saturday</span>
+                  <span>10:00 AM - 2:00 PM</span>
+                </div>
+                <div class="day">
+                  <span>Sunday</span>
+                  <span>Closed</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form">
+            <div class="form-tabs">
+              <button class="tab-btn active" onclick="openTab('message')">Send Message</button>
+              <button class="tab-btn" onclick="openTab('call')">Request Call</button>
+            </div>
+
+            <!-- Message Form -->
+            <form id="messageForm" class="form-content active">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+              </div>
+              <div class="form-group">
+                <label for="attachment">Attachment (Optional)</label>
+                <input type="file" id="attachment" name="attachment">
+              </div>
+              <button type="submit" class="btn-submit">Send Message <i class="fas fa-paper-plane"></i></button>
+            </form>
+
+            <!-- Call Request Form -->
+            <form id="callForm" class="form-content">
+              <div class="form-group">
+                <label for="callName">Your Name</label>
+                <input type="text" id="callName" name="callName" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+              </div>
+              <div class="form-group">
+                <label for="purpose">Purpose of Call</label>
+                <select id="purpose" name="purpose" required>
+                  <option value="" disabled selected>Select a purpose</option>
+                  <option value="project">Project Discussion</option>
+                  <option value="opportunity">Job Opportunity</option>
+                  <option value="collaboration">Collaboration</option>
+                  <option value="consultation">Consultation</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="preferredTime">Preferred Time</label>
+                <input type="datetime-local" id="preferredTime" name="preferredTime" required>
+              </div>
+              <div class="form-group">
+                <label for="timezone">Your Timezone</label>
+                <select id="timezone" name="timezone" required>
+                  <option value="" disabled selected>Select your timezone</option>
+                  <option value="IST">IST (Indian Standard Time)</option>
+                  <option value="EST">EST (Eastern Time)</option>
+                  <option value="PST">PST (Pacific Time)</option>
+                  <option value="GMT">GMT (Greenwich Mean Time)</option>
+                  <option value="CET">CET (Central European Time)</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="callNotes">Additional Notes</label>
+                <textarea id="callNotes" name="callNotes" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn-submit">Request Call <i class="fas fa-phone-alt"></i></button>
+            </form>
+
+            <!-- Form Status -->
+            <div id="formStatus" class="form-status"></div>
+          </div>
+        </div>
+
+        <!-- Social Connect -->
+        <div class="social-connect">
+          <h2 class="section-title"><i class="fas fa-share-alt"></i> Connect With Me</h2>
+          <div class="social-grid">
+            <a href="#" class="social-card" data-tilt>
+              <div class="social-icon">
+                <i class="fab fa-linkedin"></i>
+              </div>
+              <div class="social-content">
+                <h3>LinkedIn</h3>
+                <p>For professional networking</p>
+                <span class="social-link">Connect on LinkedIn</span>
+              </div>
+            </a>
+            <a href="#" class="social-card" data-tilt>
+              <div class="social-icon">
+                <i class="fab fa-github"></i>
+              </div>
+              <div class="social-content">
+                <h3>GitHub</h3>
+                <p>View my projects and contributions</p>
+                <span class="social-link">Visit GitHub</span>
+              </div>
+            </a>
+            <a href="#" class="social-card" data-tilt>
+              <div class="social-icon">
+                <i class="fab fa-twitter"></i>
+              </div>
+              <div class="social-content">
+                <h3>Twitter</h3>
+                <p>Follow for updates and thoughts</p>
+                <span class="social-link">Follow on Twitter</span>
+              </div>
+            </a>
+            <a href="#" class="social-card" data-tilt>
+              <div class="social-icon">
+                <i class="fab fa-instagram"></i>
+              </div>
+              <div class="social-content">
+                <h3>Instagram</h3>
+                <p>See my creative side</p>
+                <span class="social-link">Follow on Instagram</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+  <script src="js/particles.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    // Form tab functionality
+    function openTab(tabName) {
+      const tabContents = document.getElementsByClassName('form-content');
+      for (let i = 0; i < tabContents.length; i++) {
+        tabContents[i].classList.remove('active');
+      }
+      
+      const tabButtons = document.getElementsByClassName('tab-btn');
+      for (let i = 0; i < tabButtons.length; i++) {
+        tabButtons[i].classList.remove('active');
+      }
+      
+      document.getElementById(tabName + 'Form').classList.add('active');
+      event.currentTarget.classList.add('active');
+    }
+
+    // Form submission handling
+    document.getElementById('messageForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const formStatus = document.getElementById('formStatus');
+      formStatus.innerHTML = '<div class="status-success"><i class="fas fa-check-circle"></i> Message sent successfully! I will get back to you soon.</div>';
+      formStatus.style.display = 'block';
+      this.reset();
+      
+      setTimeout(() => {
+        formStatus.style.display = 'none';
+      }, 5000);
+    });
+
+    document.getElementById('callForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const formStatus = document.getElementById('formStatus');
+      formStatus.innerHTML = '<div class="status-success"><i class="fas fa-check-circle"></i> Call request received! I will contact you at your preferred time.</div>';
+      formStatus.style.display = 'block';
+      this.reset();
+      
+      setTimeout(() => {
+        formStatus.style.display = 'none';
+      }, 5000);
+    });
+
+    // Timezone detection
+    window.onload = function() {
+      const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+      if (timezone && document.getElementById('timezone')) {
+        const timezoneSelect = document.getElementById('timezone');
+        for (let i = 0; i < timezoneSelect.options.length; i++) {
+          if (timezoneSelect.options[i].text.includes(timezone)) {
+            timezoneSelect.selectedIndex = i;
+            break;
+          }
+        }
+      }
+    };
+  </script>
+</body>
+</html>

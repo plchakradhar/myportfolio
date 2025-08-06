@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>P. Lakshmi Chakradhar | Projects</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/projects.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+<body class="projects-page">
+  <!-- Particle Background -->
+  <div id="particles-js" class="particles-container"></div>
+
+  <!-- Floating Navigation -->
+  <nav class="floating-nav">
+    <div class="nav-content">
+      <div class="nav-links">
+        <a href="index.html"><i class="fas fa-home"></i><span>Home</span></a>
+        <a href="about.html"><i class="fas fa-user"></i><span>About</span></a>
+        <a href="projects.html" class="active"><i class="fas fa-project-diagram"></i><span>Projects</span></a>
+        <a href="achievements.html"><i class="fas fa-trophy"></i><span>Achievements</span></a>
+        <a href="skills.html"><i class="fas fa-code"></i><span>External Skills</span></a>
+        <a href="education.html"><i class="fas fa-graduation-cap"></i><span>Education</span></a>
+        <a href="contact.html"><i class="fas fa-envelope"></i><span>Contact</span></a>
+      </div>
+      <div class="nav-footer">
+        <div class="social-links">
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>&copy; 2023 P. Lakshmi Chakradhar</p>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="content-overlay">
+    <main class="main-content">
+      <section class="projects-section">
+        <div class="section-header">
+          <h1 class="text-gradient">My <span>Projects</span></h1>
+          <p class="subtitle">A showcase of my technical work and innovations</p>
+        </div>
+
+        <!-- Project Filter -->
+        <div class="project-filter">
+          <button class="filter-btn active" onclick="filterProjects('all')">All Projects</button>
+          <button class="filter-btn" onclick="filterProjects('completed')">Completed</button>
+          <button class="filter-btn" onclick="filterProjects('ongoing')">Ongoing</button>
+          <button class="filter-btn" onclick="filterProjects('upcoming')">Upcoming</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-container">
+          <!-- Completed Projects -->
+          <div class="project-category">
+            <h2 class="section-title"><i class="fas fa-check-circle"></i> Completed Projects</h2>
+            
+            <div class="projects-grid">
+              <!-- Project 1 -->
+              <div class="project-card completed" data-tilt>
+                <div class="project-image">
+                  <img src="assets/project1.jpg" alt="Smart Attendance System">
+                  <div class="project-status completed">Completed</div>
+                </div>
+                <div class="project-content">
+                  <h3>Smart Attendance System</h3>
+                  <p class="project-description">A facial recognition-based attendance system using Python and OpenCV that automates classroom attendance with 95% accuracy.</p>
+                  <div class="project-tech">
+                    <span>Python</span>
+                    <span>OpenCV</span>
+                    <span>Flask</span>
+                    <span>SQLite</span>
+                  </div>
+                  <div class="project-links">
+                    <a href="#" class="btn-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    <a href="#" class="btn-link"><i class="fab fa-github"></i> Source Code</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project 2 -->
+              <div class="project-card completed" data-tilt>
+                <div class="project-image">
+                  <img src="assets/project2.jpg" alt="E-Commerce Platform">
+                  <div class="project-status completed">Completed</div>
+                </div>
+                <div class="project-content">
+                  <h3>E-Commerce Platform</h3>
+                  <p class="project-description">Full-stack e-commerce website with user authentication, product catalog, shopping cart, and payment integration.</p>
+                  <div class="project-tech">
+                    <span>React</span>
+                    <span>Node.js</span>
+                    <span>MongoDB</span>
+                    <span>Stripe API</span>
+                  </div>
+                  <div class="project-links">
+                    <a href="#" class="btn-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    <a href="#" class="btn-link"><i class="fab fa-github"></i> Source Code</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project 3 -->
+              <div class="project-card completed" data-tilt>
+                <div class="project-image">
+                  <img src="assets/project3.jpg" alt="Health Monitoring App">
+                  <div class="project-status completed">Completed</div>
+                </div>
+                <div class="project-content">
+                  <h3>Health Monitoring App</h3>
+                  <p class="project-description">Mobile application that tracks vital health metrics and provides personalized health recommendations using machine learning.</p>
+                  <div class="project-tech">
+                    <span>Flutter</span>
+                    <span>Firebase</span>
+                    <span>TensorFlow Lite</span>
+                    <span>Dart</span>
+                  </div>
+                  <div class="project-links">
+                    <a href="#" class="btn-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    <a href="#" class="btn-link"><i class="fab fa-github"></i> Source Code</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ongoing Projects -->
+          <div class="project-category">
+            <h2 class="section-title"><i class="fas fa-spinner"></i> Ongoing Projects</h2>
+            
+            <div class="projects-grid">
+              <!-- Project 4 -->
+              <div class="project-card ongoing" data-tilt>
+                <div class="project-image">
+                  <img src="assets/project4.jpg" alt="AI-Powered Chatbot">
+                  <div class="project-status ongoing">In Progress</div>
+                </div>
+                <div class="project-content">
+                  <h3>AI-Powered Chatbot</h3>
+                  <p class="project-description">Context-aware chatbot for customer support using natural language processing and deep learning techniques.</p>
+                  <div class="project-tech">
+                    <span>Python</span>
+                    <span>TensorFlow</span>
+                    <span>NLTK</span>
+                    <span>Flask</span>
+                  </div>
+                  <div class="project-progress">
+                    <div class="progress-bar">
+                      <div class="progress-fill" style="width: 65%"></div>
+                    </div>
+                    <span>65% Complete</span>
+                  </div>
+                  <div class="project-links">
+                    <a href="#" class="btn-link"><i class="fab fa-github"></i> View Progress</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project 5 -->
+              <div class="project-card ongoing" data-tilt>
+                <div class="project-image">
+                  <img src="assets/project5.jpg" alt="Blockchain Voting System">
+                  <div class="project-status ongoing">In Progress</div>
+                </div>
+                <div class="project-content">
+                  <h3>Blockchain Voting System</h3>
+                  <p class="project-description">Decentralized voting application ensuring transparency and security in electoral processes using blockchain technology.</p>
+                  <div class="project-tech">
+                    <span>Solidity</span>
+                    <span>Ethereum</span>
+                    <span>Web3.js</span>
+                    <span>React</span>
+                  </div>
+                  <div class="project-progress">
+                    <div class="progress-bar">
+                      <div class="progress-fill" style="width: 40%"></div>
+                    </div>
+                    <span>40% Complete</span>
+                  </div>
+                  <div class="project-links">
+                    <a href="#" class="btn-link"><i class="fab fa-github"></i> View Progress</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Upcoming Projects -->
+          <div class="project-category">
+            <h2 class="section-title"><i class="fas fa-lightbulb"></i> Upcoming Projects</h2>
+            
+            <div class="projects-grid">
+              <!-- Project 6 -->
+              <div class="project-card upcoming" data-tilt>
+                <div class="project-image">
+                  <img src="assets/project6.jpg" alt="AR Navigation App">
+                  <div class="project-status upcoming">Planned</div>
+                </div>
+                <div class="project-content">
+                  <h3>AR Navigation App</h3>
+                  <p class="project-description">Augmented reality navigation system for indoor spaces with real-time pathfinding and location-based information.</p>
+                  <div class="project-tech">
+                    <span>ARKit</span>
+                    <span>Swift</span>
+                    <span>CoreLocation</span>
+                    <span>Firebase</span>
+                  </div>
+                  <div class="project-timeline">
+                    <span><i class="fas fa-calendar-alt"></i> Planned Start: Q1 2024</span>
+                  </div>
+                  <div class="project-links">
+                    <a href="#" class="btn-link"><i class="fas fa-info-circle"></i> Learn More</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project 7 -->
+              <div class="project-card upcoming" data-tilt>
+                <div class="project-image">
+                  <img src="assets/project7.jpg" alt="IoT Smart Home">
+                  <div class="project-status upcoming">Planned</div>
+                </div>
+                <div class="project-content">
+                  <h3>IoT Smart Home System</h3>
+                  <p class="project-description">Integrated smart home solution with energy monitoring, automated controls, and voice assistant compatibility.</p>
+                  <div class="project-tech">
+                    <span>Raspberry Pi</span>
+                    <span>MQTT</span>
+                    <span>Node-RED</span>
+                    <span>React Native</span>
+                  </div>
+                  <div class="project-timeline">
+                    <span><i class="fas fa-calendar-alt"></i> Planned Start: Q2 2024</span>
+                  </div>
+                  <div class="project-links">
+                    <a href="#" class="btn-link"><i class="fas fa-info-circle"></i> Learn More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Showcase -->
+        <div class="project-showcase">
+          <h2 class="section-title"><i class="fas fa-star"></i> Featured Project</h2>
+          
+          <div class="showcase-card" data-tilt>
+            <div class="showcase-content">
+              <h3>Smart Agriculture System</h3>
+              <h4>IoT-based solution for precision farming</h4>
+              <p class="showcase-description">An end-to-end IoT solution that monitors soil conditions, weather patterns, and crop health to provide data-driven recommendations for farmers. The system includes sensor nodes, a central gateway, and a mobile application with real-time analytics.</p>
+              
+              <div class="showcase-features">
+                <div class="feature-item">
+                  <i class="fas fa-check-circle"></i>
+                  <span>Real-time soil monitoring</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-check-circle"></i>
+                  <span>Predictive analytics for crop health</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-check-circle"></i>
+                  <span>Automated irrigation control</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-check-circle"></i>
+                  <span>Mobile alerts and notifications</span>
+                </div>
+              </div>
+              
+              <div class="project-tech">
+                <span>Arduino</span>
+                <span>LoRaWAN</span>
+                <span>Python</span>
+                <span>React Native</span>
+                <span>TensorFlow</span>
+              </div>
+              
+              <div class="showcase-links">
+                <a href="#" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                <a href="#" class="btn btn-outline"><i class="fab fa-github"></i> Source Code</a>
+                <a href="#" class="btn btn-outline"><i class="fas fa-file-pdf"></i> Case Study</a>
+              </div>
+            </div>
+            <div class="showcase-image">
+              <img src="assets/featured-project.jpg" alt="Smart Agriculture System">
+              <div class="award-badge">
+                <i class="fas fa-trophy"></i>
+                <span>Best Project Award 2023</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+  <script src="js/particles.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    // Project filter functionality
+    function filterProjects(category) {
+      // Update active button
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      filterButtons.forEach(btn => btn.classList.remove('active'));
+      event.target.classList.add('active');
+      
+      // Show/hide project categories
+      const projectCategories = document.querySelectorAll('.project-category');
+      
+      if (category === 'all') {
+        // Show all categories
+        projectCategories.forEach(cat => {
+          cat.style.display = 'block';
+        });
+      } else {
+        // Hide all categories first
+        projectCategories.forEach(cat => {
+          cat.style.display = 'none';
+        });
+        
+        // Show only the selected category
+        const categoryMap = {
+          'completed': 'Completed Projects',
+          'ongoing': 'Ongoing Projects',
+          'upcoming': 'Upcoming Projects'
+        };
+        
+        const headings = document.querySelectorAll('.section-title');
+        headings.forEach(heading => {
+          if (heading.textContent.includes(categoryMap[category])) {
+            heading.parentElement.style.display = 'block';
+          }
+        });
+      }
+      
+      // Smooth scroll to top of projects
+      document.querySelector('.projects-container').scrollIntoView({
+        behavior: 'smooth'
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>P. Lakshmi Chakradhar | Achievements</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/achievements.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+<body class="achievements-page">
+  <!-- Particle Background -->
+  <div id="particles-js" class="particles-container"></div>
+
+  <!-- Floating Navigation -->
+  <nav class="floating-nav">
+    <div class="nav-content">
+      <div class="nav-links">
+        <a href="index.html"><i class="fas fa-home"></i><span>Home</span></a>
+        <a href="about.html"><i class="fas fa-user"></i><span>About</span></a>
+        <a href="projects.html"><i class="fas fa-project-diagram"></i><span>Projects</span></a>
+        <a href="achievements.html" class="active"><i class="fas fa-trophy"></i><span>Achievements</span></a>
+        <a href="skills.html"><i class="fas fa-code"></i><span>External Skills</span></a>
+        <a href="education.html"><i class="fas fa-graduation-cap"></i><span>Education</span></a>
+        <a href="contact.html"><i class="fas fa-envelope"></i><span>Contact</span></a>
+      </div>
+      <div class="nav-footer">
+        <div class="social-links">
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>&copy; 2023 P. Lakshmi Chakradhar</p>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="content-overlay">
+    <main class="main-content">
+      <section class="achievements-section">
+        <div class="section-header">
+          <h1 class="text-gradient">My <span>Achievements</span></h1>
+          <p class="subtitle">Recognitions, awards, and certifications I've earned</p>
+        </div>
+
+        <!-- Achievement Filter -->
+        <div class="achievement-filter">
+          <button class="filter-btn active" onclick="filterAchievements('all')">All</button>
+          <button class="filter-btn" onclick="filterAchievements('awards')">Awards</button>
+          <button class="filter-btn" onclick="filterAchievements('certifications')">Certifications</button>
+          <button class="filter-btn" onclick="filterAchievements('publications')">Publications</button>
+          <button class="filter-btn" onclick="filterAchievements('hackathons')">Hackathons</button>
+        </div>
+
+        <!-- Awards Section -->
+        <div class="achievement-category awards">
+          <h2 class="section-title"><i class="fas fa-award"></i> Awards & Honors</h2>
+          
+          <div class="achievements-grid">
+            <!-- Award 1 -->
+            <div class="achievement-card" data-tilt>
+              <div class="achievement-icon">
+                <i class="fas fa-trophy"></i>
+              </div>
+              <div class="achievement-content">
+                <h3>Best Project Award 2023</h3>
+                <p class="achievement-description">Awarded by KL University for developing an innovative Smart Agriculture System using IoT and AI technologies.</p>
+                <div class="achievement-meta">
+                  <span><i class="fas fa-calendar-alt"></i> May 2023</span>
+                  <span><i class="fas fa-map-marker-alt"></i> KL University, Hyderabad</span>
+                </div>
+                <button class="btn-view-details" onclick="showAchievementDetails('award1')">View Details</button>
+              </div>
+            </div>
+
+            <!-- Award 2 -->
+            <div class="achievement-card" data-tilt>
+              <div class="achievement-icon">
+                <i class="fas fa-medal"></i>
+              </div>
+              <div class="achievement-content">
+                <h3>Academic Excellence Award</h3>
+                <p class="achievement-description">Recognized for maintaining a CGPA of 9.2+ for three consecutive semesters in Computer Science Engineering.</p>
+                <div class="achievement-meta">
+                  <span><i class="fas fa-calendar-alt"></i> December 2022</span>
+                  <span><i class="fas fa-map-marker-alt"></i> KL University</span>
+                </div>
+                <button class="btn-view-details" onclick="showAchievementDetails('award2')">View Details</button>
+              </div>
+            </div>
+
+            <!-- Award 3 -->
+            <div class="achievement-card" data-tilt>
+              <div class="achievement-icon">
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="achievement-content">
+                <h3>National Coding Champion</h3>
+                <p class="achievement-description">Secured 1st position in National Level Coding Competition organized by TechGig with 5000+ participants.</p>
+                <div class="achievement-meta">
+                  <span><i class="fas fa-calendar-alt"></i> August 2021</span>
+                  <span><i class="fas fa-map-marker-alt"></i> Online Competition</span>
+                </div>
+                <button class="btn-view-details" onclick="showAchievementDetails('award3')">View Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certifications Section -->
+        <div class="achievement-category certifications">
+          <h2 class="section-title"><i class="fas fa-certificate"></i> Certifications</h2>
+          
+          <div class="achievements-grid">
+            <!-- Certification 1 -->
+            <div class="achievement-card" data-tilt>
+              <div class="achievement-icon">
+                <i class="fas fa-laptop-code"></i>
+              </div>
+              <div class="achievement-content">
+                <h3>Google Cloud Professional</h3>
+                <p class="achievement-description">Google Cloud Professional Data Engineer certification validating expertise in data processing systems.</p>
+                <div class="achievement-meta">
+                  <span><i class="fas fa-calendar-alt"></i> June 2023</span>
+                  <span><i class="fas fa-external-link-alt"></i> Credential ID: GCP123456</span>
+                </div>
+                <button class="btn-view-details" onclick="showAchievementDetails('cert1')">View Certificate</button>
+              </div>
+            </div>
+
+            <!-- Certification 2 -->
+            <div class="achievement-card" data-tilt>
+              <div class="achievement-icon">
+                <i class="fas fa-robot"></i>
+              </div>
+              <div class="achievement-content">
+                <h3>AI Specialization</h3>
+                <p class="achievement-description">Deep Learning Specialization from Coursera covering Neural Networks, CNNs, RNNs, and Transformers.</p>
+                <div class="achievement-meta">
+                  <span><i class="fas fa-calendar-alt"></i> March 2023</span>
+                  <span><i class="fas fa-external-link-alt"></i> Credential ID: DL789012</span>
+                </div>
+                <button class="btn-view-details" onclick="showAchievementDetails('cert2')">View Certificate</button>
+              </div>
+            </div>
+
+            <!-- Certification 3 -->
+            <div class="achievement-card" data-tilt>
+              <div class="achievement-icon">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <div class="achievement-content">
+                <h3>Cybersecurity Essentials</h3>
+                <p class="achievement-description">Cisco Cybersecurity Essentials certification covering network security fundamentals and threat protection.</p>
+                <div class="achievement-meta">
+                  <span><i class="fas fa-calendar-alt"></i> November 2022</span>
+                  <span><i class="fas fa-external-link-alt"></i> Credential ID: CSE345678</span>
+                </div>
+                <button class="btn-view-details" onclick="showAchievementDetails('cert3')">View Certificate</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Publications Section -->
+        <div class="achievement-category publications">
+          <h2 class="section-title"><i class="fas fa-book"></i> Publications</h2>
+          
+          <div class="achievements-grid">
+            <!-- Publication 1 -->
+            <div class="achievement-card" data-tilt>
+              <div class="achievement-icon">
+                <i class="fas fa-file-alt"></i>
+              </div>
+              <div class="achievement-content">
+                <h3>IoT in Smart Agriculture</h3>
+                <p class="achievement-description">Published in IEEE Journal on IoT-based solutions for precision farming and crop monitoring systems.</p>
+                <div class="achievement-meta">
+                  <span><i class="fas fa-calendar-alt"></i> April 2023</span>
+                  <span><i class="fas fa-external-link-alt"></i> DOI: 10.1109/JIOT.2023.12345</span>
+                </div>
+                <button class="btn-view-details" onclick="showAchievementDetails('pub1')">Read Paper</button>
+              </div>
+            </div>
+
+            <!-- Publication 2 -->
+            <div class="achievement-card" data-tilt>
+              <div class="achievement-icon">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <div class="achievement-content">
+                <h3>AI for Healthcare Analytics</h3>
+                <p class="achievement-description">Conference paper on machine learning applications in healthcare diagnostics at ACM SIGKDD.</p>
+                <div class="achievement-meta">
+                  <span><i class="fas fa-calendar-alt"></i> September 2022</span>
+                  <span><i class="fas fa-external-link-alt"></i> DOI: 10.1145/1234567.890123</span>
+                </div>
+                <button class="btn-view-details" onclick="showAchievementDetails('pub2')">Read Paper</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hackathons Section -->
+        <div class="achievement-category hackathons">
+          <h2 class="section-title"><i class="fas fa-code"></i> Hackathons</h2>
+          
+          <div class="achievements-grid">
+            <!-- Hackathon 1 -->
+            <div class="achievement-card" data-tilt>
+              <div class="achievement-icon">
+                <i class="fas fa-trophy"></i>
+              </div>
+              <div class="achievement-content">
+                <h3>Smart India Hackathon Winner</h3>
+                <p class="achievement-description">National level hackathon winner for developing an AI-powered education platform for rural schools.</p>
+                <div class="achievement-meta">
+                  <span><i class="fas fa-calendar-alt"></i> March 2023</span>
+                  <span><i class="fas fa-map-marker-alt"></i> New Delhi, India</span>
+                </div>
+                <button class="btn-view-details" onclick="showAchievementDetails('hack1')">View Project</button>
+              </div>
+            </div>
+
+            <!-- Hackathon 2 -->
+            <div class="achievement-card" data-tilt>
+              <div class="achievement-icon">
+                <i class="fas fa-medal"></i>
+              </div>
+              <div class="achievement-content">
+                <h3>Google Solution Challenge Finalist</h3>
+                <p class="achievement-description">Top 50 global finalist in Google's annual developer competition for social impact projects.</p>
+                <div class="achievement-meta">
+                  <span><i class="fas fa-calendar-alt"></i> July 2022</span>
+                  <span><i class="fas fa-map-marker-alt"></i> Virtual Event</span>
+                </div>
+                <button class="btn-view-details" onclick="showAchievementDetails('hack2')">View Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Featured Achievement -->
+        <div class="featured-achievement">
+          <h2 class="section-title"><i class="fas fa-star"></i> Featured Achievement</h2>
+          
+          <div class="featured-card" data-tilt>
+            <div class="featured-badge">
+              <i class="fas fa-crown"></i>
+              <span>Top Achievement</span>
+            </div>
+            <div class="featured-content">
+              <h3>National Level Tech Innovation Award</h3>
+              <h4>Ministry of Electronics & IT, Government of India</h4>
+              <p class="featured-description">Recognized by MeitY for developing an innovative blockchain-based voting system that enhances electoral transparency and security. Selected among top 10 innovations from 5000+ submissions nationwide.</p>
+              
+              <div class="achievement-details">
+                <div class="detail-item">
+                  <i class="fas fa-calendar-check"></i>
+                  <div>
+                    <span>Date Awarded</span>
+                    <p>15 August 2023</p>
+                  </div>
+                </div>
+                <div class="detail-item">
+                  <i class="fas fa-map-marked-alt"></i>
+                  <div>
+                    <span>Location</span>
+                    <p>Vigyan Bhawan, New Delhi</p>
+                  </div>
+                </div>
+                <div class="detail-item">
+                  <i class="fas fa-trophy"></i>
+                  <div>
+                    <span>Prize</span>
+                    <p>₹5,00,000 Grant + Incubation Support</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="featured-links">
+                <a href="#" class="btn btn-primary"><i class="fas fa-newspaper"></i> Press Coverage</a>
+                <a href="#" class="btn btn-outline"><i class="fas fa-images"></i> Event Photos</a>
+                <a href="#" class="btn btn-outline"><i class="fas fa-file-certificate"></i> Award Certificate</a>
+              </div>
+            </div>
+            <div class="featured-image">
+              <img src="assets/featured-achievement.jpg" alt="National Level Tech Innovation Award">
+            </div>
+          </div>
+        </div>
+
+        <!-- Achievement Modal -->
+        <div class="achievement-modal" id="achievementModal">
+          <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <div class="modal-header">
+              <h3 id="modalTitle">Achievement Title</h3>
+              <p id="modalSubtitle">Achievement Subtitle</p>
+            </div>
+            <div class="modal-body">
+              <div class="modal-image">
+                <img id="modalImage" src="" alt="Achievement Image">
+              </div>
+              <div class="modal-details">
+                <p id="modalDescription">Achievement description goes here...</p>
+                <div class="modal-meta">
+                  <div class="meta-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span id="modalDate">Date</span>
+                  </div>
+                  <div class="meta-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span id="modalLocation">Location</span>
+                  </div>
+                  <div class="meta-item">
+                    <i class="fas fa-link"></i>
+                    <span id="modalLink">Reference Link</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <a href="#" class="btn btn-primary" id="modalActionBtn"><i class="fas fa-external-link-alt"></i> View Details</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+  <script src="js/particles.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    // Achievement filter functionality
+    function filterAchievements(category) {
+      // Update active button
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      filterButtons.forEach(btn => btn.classList.remove('active'));
+      event.target.classList.add('active');
+      
+      // Show/hide achievement categories
+      const achievementCategories = document.querySelectorAll('.achievement-category');
+      
+      if (category === 'all') {
+        // Show all categories
+        achievementCategories.forEach(cat => {
+          cat.style.display = 'block';
+        });
+      } else {
+        // Hide all categories first
+        achievementCategories.forEach(cat => {
+          cat.style.display = 'none';
+        });
+        
+        // Show only the selected category
+        document.querySelector(`.${category}`).style.display = 'block';
+      }
+      
+      // Smooth scroll to top of achievements
+      document.querySelector('.achievements-section').scrollIntoView({
+        behavior: 'smooth'
+      });
+    }
+
+    // Achievement details modal
+    const achievementData = {
+      award1: {
+        title: "Best Project Award 2023",
+        subtitle: "KL University",
+        description: "Awarded the prestigious Best Project Award for developing an innovative Smart Agriculture System that integrates IoT sensors with machine learning algorithms to optimize crop yields and reduce water usage by 40%. The system was implemented in 5 pilot farms with measurable success.",
+        date: "15 May 2023",
+        location: "KL University, Hyderabad",
+        link: "https://university.edu/awards/2023",
+        image: "assets/award1.jpg",
+        action: "View Award Certificate"
+      },
+      cert1: {
+        title: "Google Cloud Professional",
+        subtitle: "Google Cloud Certification",
+        description: "Earned the Google Cloud Professional Data Engineer certification by demonstrating the ability to design and build data processing systems, operationalize machine learning models, and ensure solution quality on Google Cloud Platform.",
+        date: "10 June 2023",
+        location: "Online Certification",
+        link: "https://www.credential.net/123456",
+        image: "assets/cert1.jpg",
+        action: "Verify Certification"
+      },
+      // Add more achievement data as needed
+    };
+
+    function showAchievementDetails(id) {
+      const achievement = achievementData[id];
+      if (!achievement) return;
+      
+      document.getElementById('modalTitle').textContent = achievement.title;
+      document.getElementById('modalSubtitle').textContent = achievement.subtitle;
+      document.getElementById('modalDescription').textContent = achievement.description;
+      document.getElementById('modalDate').textContent = achievement.date;
+      document.getElementById('modalLocation').textContent = achievement.location;
+      document.getElementById('modalLink').innerHTML = `<a href="${achievement.link}" target="_blank">${achievement.link}</a>`;
+      document.getElementById('modalImage').src = achievement.image;
+      document.getElementById('modalImage').alt = achievement.title;
+      document.getElementById('modalActionBtn').innerHTML = `<i class="fas fa-external-link-alt"></i> ${achievement.action}`;
+      document.getElementById('modalActionBtn').href = achievement.link;
+      
+      document.getElementById('achievementModal').style.display = 'block';
+    }
+
+    function closeModal() {
+      document.getElementById('achievementModal').style.display = 'none';
+    }
+
+    // Close modal when clicking outside
+    window.onclick = function(event) {
+      const modal = document.getElementById('achievementModal');
+      if (event.target == modal) {
+        modal.style.display = 'none';
+      }
+    }
+  </script>
+</body>
+</html>

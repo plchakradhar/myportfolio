@@ -46,8 +46,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     "enable": true,
                     "distance": 150,
                     "color": "#6c63ff",
-                    "opacity": 0.4,
-                    "width": 1
+                    "opacity": 0.5,
+                    "width": 2
                 },
                 "move": {
                     "enable": true,
