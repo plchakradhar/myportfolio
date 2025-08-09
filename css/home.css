@@ -14,29 +14,46 @@
 }
 
 .hero-content h4 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin-bottom: 1rem;
 }
 
 .hero-content h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: 700;
     color: var(--light);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     line-height: 1.2;
 }
 
 .hero-content h3 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 600;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.4rem;
+}
+
+.btech span {
+  font-weight: bold;
+  color: var(--primary);
+}
+
+.btech{
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 1rem;
 }
 
 .hero-content p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: var(--light);
     margin-bottom: 1rem;
     line-height: 1.8;
+}
+
+p span {
+    border-radius: 1px solid var(--primary);
+  font-weight: bold;
+  color: var(--primary);
 }
 
 .cta-buttons {
@@ -74,6 +91,8 @@
     border: 5px solid #572eb7;
 }
 
+
+
 .tech-badge {
     position: absolute;
     bottom: -20px;
@@ -86,6 +105,8 @@
     display: flex;
     gap: 1rem;
 }
+
+
 
 .tech-badge span {
     background: rgba(108, 99, 255, 0.1);
@@ -113,9 +134,13 @@
     border-bottom: 10px solid rgb(102, 52, 218);
     border-radius: 15px;
     padding: 2rem;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    /* box-shadow: 0 10px 30px rgb(249, 7, 7); */
     transition: var(--transition);
     text-align: center;
+}
+.link-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(108, 99, 255, 0.2);
 }
 
 .link-card i {
@@ -165,4 +190,28 @@
         width: 300px;
         height: 300px;
     }
+}
+
+.about-container {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  gap: 8px;
+  margin-bottom: 2rem;
+}
+
+#changing-text {
+  color: var(--primary);
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #007BFF;
+  animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: #007BFF; }
 }

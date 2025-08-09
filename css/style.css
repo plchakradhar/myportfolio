@@ -3,7 +3,7 @@
     --primary: #756ef5;
     --secondary: #572eb7;
     --dark: #1a1a2e;
-    --light: #eeeded;
+    --light: #e2e2e2;
     --accent: #238eeb;
     --gradienttext: linear-gradient(135deg, var(--primary), var(--accent));
     --gradient: linear-gradient(135deg, var(--primary), var(--secondary));

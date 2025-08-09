@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/home.css" />
   <link rel="stylesheet" href="css/animations.css" />
 </head>
 <body class="home-page">
@@ -26,7 +26,7 @@
         <a href="projects.html"><i class="fas fa-project-diagram"></i><span>Projects</span></a>
         <a href="achievements.html"><i class="fas fa-trophy"></i><span>Achievements</span></a>
         <a href="skills.html"><i class="fas fa-code"></i><span>External Skills</span></a>
-        <a href="education.html"><i class="fas fa-graduation-cap"></i><span>Education</span></a>
+        <a href="motivation.html"><i class="fas fa-graduation-cap"></i><span>motivation</span></a>
         <a href="contact.html"><i class="fas fa-envelope"></i><span>Contact</span></a>
       </div>
       <div class="nav-footer">
@@ -47,12 +47,18 @@
         <div class="hero-content">
           <h4 class="text-gradient">Hello, I'm</h4>
           <h1 class="typing-animation">P. Lakshmi Chakradhar</h1>
-          <h3 class="text-gradient">BTech Computer Science And Engineer</h3>
-          <p>Pursuing My B.Tech At KL University</p>
-          <p>Pursuing My B.Tech At KL University</p>
-          <p>Pursuing My B.Tech At KL University</p>
-          <p>Pursuing My B.Tech At KL University</p>
-          <p>Pursuing My B.Tech At KL University</p>
+          <div class="btech">Pursing My<span> B.Tech</span> Degree At<span> KL University</span></div>
+          <div class="about-container">
+  <span>I am a </span>
+  <span id="changing-text"></span>
+</div>
+
+          
+          <p><span>Development – </span>Building responsive web applications using HTML, CSS, JavaScript, PHP, MySQL, and React</p>
+          <p><span>UI/UX Design –</span> Creating modern, animated, and user-friendly interfaces</p>
+          <p><span>Programming Expertise –</span> Skilled in C, C++, Python, and Java for problem-solving and algorithms</p>
+          <p><span>Creative Media –</span> Photography, videography, and professional editing</p>
+          <p><span>Tech Enthusiast –</span> Passionate about learning and exploring emerging technologies</p>
           <!-- <div class="cta-buttons">
             <a href="projects.html" class="btn btn-primary pulse-effect">View My Work</a>
             <a href="contact.html" class="btn btn-outline">Contact Me</a>
@@ -98,5 +104,37 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
   <script src="js/particles.js"></script>
   <script src="js/main.js"></script>
+  <script>
+  const roles = ["Software Developer", "Designer", "Engineer", "Editor"];
+  const textElement = document.getElementById("changing-text");
+  let index = 0;
+  let charIndex = 0;
+  let typing = true;
+
+  function typeEffect() {
+    const current = roles[index];
+
+    if (typing) {
+      textElement.textContent = current.substring(0, charIndex++);
+      if (charIndex > current.length) {
+        typing = false;
+        setTimeout(typeEffect, 500); // Wait before deleting
+        return;
+      }
+    } else {
+      textElement.textContent = current.substring(0, charIndex--);
+      if (charIndex === 0) {
+        typing = true;
+        index = (index + 1) % roles.length;
+      }
+    }
+
+    setTimeout(typeEffect, 100);
+  }
+
+  // Start the typing effect
+  typeEffect();
+  </script>
+
 </body>
 </html>

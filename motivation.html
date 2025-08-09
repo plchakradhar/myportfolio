@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motivation | BTech CSE Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/motivation.css">
+</head>
+<body class="motivation-page">
+    <div id="particles-js"></div>
+    <!-- Floating Navigation -->
+    <nav class="floating-nav">
+        <div class="nav-content">
+            <div class="nav-logo">
+                <span>JD</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html"><i class="fas fa-home"></i><span>Home</span></a>
+                <a href="about.html"><i class="fas fa-user"></i><span>About</span></a>
+                <a href="skills.html"><i class="fas fa-code"></i><span>Skills</span></a>
+                <a href="projects.html"><i class="fas fa-project-diagram"></i><span>Projects</span></a>
+                <a href="motivation.html" class="active"><i class="fas fa-fire"></i><span>Motivation</span></a>
+                <a href="achievements.html"><i class="fas fa-trophy"></i><span>Achievements</span></a>
+                <a href="contact.html"><i class="fas fa-envelope"></i><span>Contact</span></a>
+            </div>
+            <div class="nav-footer">
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+                <p>&copy; 2023 Your Name</p>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="motivation-section">
+            <div class="motivation-header">
+                <h1 class="text-gradient"><i class="fas fa-fire"></i> My <span>Motivation</span></h1>
+                <p>What drives me every day as a Computer Science Engineer</p>
+            </div>
+            <div class="quote-block animate-pop">
+                <i class="fas fa-quote-left"></i>
+                <span>
+                    "Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful."
+                </span>
+                <i class="fas fa-quote-right"></i>
+            </div>
+            <div class="motivation-content fade-in-up">
+                <h2>Why I Love Technology</h2>
+                <p>
+                    Technology empowers us to solve real-world problems, connect people globally, and create a positive impact. My motivation stems from the endless possibilities to innovate, learn, and contribute to a better future through code and creativity.
+                </p>
+                <ul class="motivation-list">
+                    <li><i class="fas fa-lightbulb"></i> Passion for continuous learning and growth</li>
+                    <li><i class="fas fa-users"></i> Desire to build solutions that help people</li>
+                    <li><i class="fas fa-rocket"></i> Drive to push boundaries and explore new technologies</li>
+                    <li><i class="fas fa-heart"></i> Commitment to making a difference with empathy and ethics</li>
+                </ul>
+            </div>
+            <div class="motivation-gallery">
+                <div class="gallery-card tilt">
+                    <img src="assets/motivation1.jpg" alt="Innovation">
+                    <div class="gallery-caption">Innovate Every Day</div>
+                </div>
+                <div class="gallery-card tilt">
+                    <img src="assets/motivation2.jpg" alt="Teamwork">
+                    <div class="gallery-caption">Teamwork & Collaboration</div>
+                </div>
+                <div class="gallery-card tilt">
+                    <img src="assets/motivation3.jpg" alt="Growth">
+                    <div class="gallery-caption">Never Stop Growing</div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".tilt"), {
+            max: 15,
+            speed: 400,
+            glare: true,
+            "max-glare": 0.2
+        });
+    </script>
+</body>
+</html>
